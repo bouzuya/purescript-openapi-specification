@@ -1,0 +1,35 @@
+{
+  "name": "purescript-openapi-specification",
+  "description": "OpenAPI Specification types for PureScript.",
+  "version": "0.0.0",
+  "author": {
+    "email": "m@bouzuya.net",
+    "name": "bouzuya",
+    "url": "https://bouzuya.net/"
+  },
+  "bugs": {
+    "url": "https://github.com/bouzuya/purescript-openapi-specification/issues"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3",
+    "psc-package-bin-simple": "^1.0.4",
+    "purescript": "^0.12.0"
+  },
+  "homepage": "https://github.com/bouzuya/purescript-openapi-specification#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouzuya/purescript-openapi-specification.git"
+  },
+  "scripts": {
+    "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
+    "postinstall": "psc-package install",
+    "psc-package": "psc-package",
+    "purs": "purs",
+    "repl": "psc-package repl -- 'test/**/*.purs'",
+    "start": "node -e \"require('./output/Server.Main').main();\"",
+    "test": "node -e \"require('./output/Test.Main').main();\""
+  }
+}
