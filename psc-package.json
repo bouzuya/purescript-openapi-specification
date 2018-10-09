@@ -4,6 +4,8 @@
   "source": "https://github.com/purescript/package-sets.git",
   "depends": [
     "effect",
+    "foreign-object",
+    "node-fs",
     "nullable",
     "prelude",
     "psci-support",
