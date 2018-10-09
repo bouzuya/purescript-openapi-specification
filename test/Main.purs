@@ -2,13 +2,11 @@ module Test.Main
   ( main
   ) where
 
-import Data.Either (Either(..), fromRight, isLeft, isRight)
-import Data.List.Lazy.Types (NonEmptyList(..))
+import Data.Either (Either(..), isLeft)
 import Data.Maybe (Maybe(..))
 import Data.Nullable (Nullable, toNullable)
 import Effect (Effect)
 import Foreign (MultipleErrors)
-import Partial.Unsafe (unsafePartial)
 import Prelude (Unit, discard)
 import Simple.JSON (readJSON, writeJSON)
 import Test.Unit (suite, test)
